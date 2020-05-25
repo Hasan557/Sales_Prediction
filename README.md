@@ -1,7 +1,7 @@
 # Sales_Repository
 
 ## Introduction 
-Sales forecasting is a crucial part of the financial planning of any retail operation. Forecasting is a selfassessment tool that uses past sales statistics to intelligently predict future performance (Sun, et al., 2008). This is essential for meeting the demands of consumers whilst controlling pricing and optimizing the use of inventory space, as holding excess inventory adds to overhead costs for a business.
+Sales forecasting is a crucial part of the financial planning of any retail operation. Forecasting is a selfassessment tool that uses past sales statistics to intelligently predict future performance. This is essential for meeting the demands of consumers whilst controlling pricing and optimizing the use of inventory space, as holding excess inventory adds to overhead costs for a business.
    
 ### 1. Business Understanding
  A key challenge of modeling retail data is the need to make decisions based on limited history. Holidays and select major events that come once a year, and so does the chance to see how strategic decisions impacted the bottom line. In addition, the relationship of how markdowns (a reduction in the originally marked retail price of merchandise) affect sales not fully known. The goal is to use historical weekly sales data to develop a model that better understands consumer purchasing patterns so we can predict which departments will be affected by these occasional events and to what extent. By doing so, we hope to provide retailers with the knowledge to more efficiently optimize their shelving and inventory space. We would do so by using machine learning models that estimates future sales when provided with current data about relevant features.
@@ -34,7 +34,7 @@ We converted the “Type” variable into categorical by :
 
 ![Change_Category](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Category_Clean.png)
 
-### 5. Visualization
+### 4. Visualization
 
 ## Total Sales vs Time
    The figure shows a scatter plot of the total sales vs time. We observe that sales generally follow the same pattern except for 2 spikes in the period, possibly due to seasonal variations or stores enhancing their sales channels.
@@ -43,10 +43,10 @@ We converted the “Type” variable into categorical by :
 
 More of the Visualization could be seen [here](https://github.com/Hasan557/Sales_Repository/blob/master/Data%20Analytics.pdf)
 
-### 6. Modeling
+### 5. Modeling
 
 ### Linear Regression
-   Linear Regression (LR) is one of the simplest models for machine learning. A multiple LR assumes linear relationships between the features and the target, then fits a line to the data that would result in the lowest residual sum of squared errors (Yan, 2009)x
+   Linear Regression (LR) is one of the simplest models for machine learning. A multiple LR assumes linear relationships between the features and the target, then fits a line to the data that would result in the lowest residual sum of squared errors.
 
 The resulting accuracy is quite low:
 
@@ -72,7 +72,7 @@ RFs are ensembles of decision trees (DTs), whose inputs are bootstraps of the tr
 The accuracy (94.94%) is high, but can be improved via backward feature elimination. The OOB score (0.97) is quite good as well. These results demonstrate that our model performs well enough.
 
 
-### 5. Evaluation
+### 6. Results
 
 ![Results_Comparision](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Results.png)
 
