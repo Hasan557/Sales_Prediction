@@ -15,9 +15,15 @@ Sales forecasting is a crucial part of the financial planning of any retail oper
    
    ● Features_dataset.csv: additional data related to the stores and regions.
    
-(Pic here!)
+![Merged_Dataframes](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Merged_Data_Frames.png)
 
 ### 3. Data Preparation
+
+![Clean_Weekly_Sales](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Weekly_sales_clean.png)
+
+![Change_temperature](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/temperature_clean.png)
+
+![Change_Category](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Category_Clean.png)
 
 
 ### 4. Modeling
