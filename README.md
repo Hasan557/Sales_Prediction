@@ -67,6 +67,8 @@ The predictive model has an R^2 score of 0.59. The residual distribution is cent
    We have used “Random Forests” to predict the weekly sales for all stores. Random forests (RFs) are primarily used for classification and also regression (Breiman, 2001).
 RFs are ensembles of decision trees (DTs), whose inputs are bootstraps of the training samples. The final RF prediction is the average of all of these DTs’ predictions for a given test sample (bootstrap aggregation). Since each DT has a different bootstrap set, the variance is reduced without affecting the bias. By using this form of aggregation, RFs generally have high accuracy (less overfitting, more robust to noise), but are less interpretable than single DTs.
 
+![RF_Results](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/RF_results_.png)
+
 ![RF_Results](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/RF_Results.png)
 
 The accuracy (94.94%) is high, but can be improved via backward feature elimination. The OOB score (0.97) is quite good as well. These results demonstrate that our model performs well enough.
