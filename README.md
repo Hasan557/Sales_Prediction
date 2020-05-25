@@ -93,15 +93,13 @@ The accuracy (94.94%) is high, but can be improved via backward feature eliminat
 
 ### Bayesian Model using score-based approach
 
-The features were made categorical in order to use into Apache NatBeans (here)
+The features were made categorical in order to use Apache NatBeans [Downloadable_here](https://netbeans.apache.org/download/index.html)
 
 ![Results_Comparision](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Bayesian_.png)
 
 The Phase-3 graph is the result of score-based learning that modifies the graph from Phase-2 towards the path that maximizes the BIC score. SaiyanH uses a hill-climb method that explores neighbouring graphs in which an edge is reversed, removed, or added, and moves in the direction that increases the BIC score. Once the BIC score cannot be increased attempts are made to escape possible local maximum by performing TABU search. These steps are repeated until the TABU search cannot discover a graph with a higher BIC score. The product is a graph that enables full propagation of evidence by design.
 
 ![Results_Final](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Bayesian_Results.png)
-
-
 
 ## Further Research
 
