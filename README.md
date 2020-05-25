@@ -45,8 +45,7 @@ More of the Visualization could be seen in the pdf documnent attached.
 
 ### 6. Modeling
 
-## Linear Regression
-## Description
+### Linear Regression
    Linear Regression (LR) is one of the simplest models for machine learning. A multiple LR assumes linear relationships between the features and the target, then fits a line to the data that would result in the lowest residual sum of squared errors (Yan, 2009)x
 
 The resulting accuracy is quite low:
@@ -57,16 +56,14 @@ The resulting accuracy is quite low:
 
 This is due to LR’s inherent shortcomings. LR performs rather okay while dealing with features such as Size, where a single line could fit the data to some extent. However, when adding features that are categorical in nature, such as Dept, LR can’t perform well. The reason is that an increase in a categorical feature's value which is encoded by numerics (Store, Dept) doesn’t have any real meaning in the sense of that feature increasing, unlike continuous variables like Size. Knowing that a number of features are categorical (Dept, Store, Type, IsHoliday, week) and a single line cannot fit them well, we would expect the accuracy of the model to be low using Linear Regression.
 
-## Time-Series Analysis
-## Description
+### Time-Series Analysis
    A time-series is a series of data points indexed in time order. Time-series forecasting is the use of a model to predict future values based on previously observed values. Since linear regression provided us with poor results, we decided to use time-series modelling to improve our analysis (Hamilton, 1994).
    
 ![TS_Results](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/TS_results.png)
 
 The predictive model has an R^2 score of 0.59. The residual distribution is centered around 0 with an STD of 0.07. (Further see in the code and report how building time series for individual stores could increase accuracy using external variables).
 
-## Random Forests
-## Description
+### Random Forests
    We have used “Random Forests” to predict the weekly sales for all stores. Random forests (RFs) are primarily used for classification and also regression (Breiman, 2001).
 RFs are ensembles of decision trees (DTs), whose inputs are bootstraps of the training samples. The final RF prediction is the average of all of these DTs’ predictions for a given test sample (bootstrap aggregation). Since each DT has a different bootstrap set, the variance is reduced without affecting the bias. By using this form of aggregation, RFs generally have high accuracy (less overfitting, more robust to noise), but are less interpretable than single DTs.
 
@@ -79,7 +76,7 @@ The accuracy (94.94%) is high, but can be improved via backward feature eliminat
 
 ![Results_Comparision](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Results.png)
 
-## Conclusion & Discussion
+### Conclusion & Discussion
 
    In this project, we first explored the data, gaining some insight into possible connections between the features and weekly sales. We then analyzed these features from a statistical point of view to test the hypotheses we made about these connections. Later we used 3 different machine learning methods to predict the weekly sales, arriving at the conclusions below:
 ●	There is a strong positive correlation between holiday weekends and markdowns, which was expected as Markdowns are strategically planned before holidays.
@@ -89,12 +86,11 @@ The accuracy (94.94%) is high, but can be improved via backward feature eliminat
 ●	Time series analysis is more effective if conducted on individual stores rather than an aggregation.
 
 
-## Bayesian Model using score-based approach
+### Bayesian Model using score-based approach
 
 The features were made categorical in order to use into Apache NatBeans (here)
 
 ![Results_Comparision](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Bayesian_.png)
-
 ![Results_Final](https://github.com/Hasan557/Sales_Repository/blob/master/Screenshots/Bayesian_Results.png)
 
-
+The Phase-3 graph is the result of score-based learning that modifies the graph from Phase-2 towards the path that maximizes the BIC score. SaiyanH uses a hill-climb method that explores neighbouring graphs in which an edge is reversed, removed, or added, and moves in the direction that increases the BIC score. Once the BIC score cannot be increased attempts are made to escape possible local maximum by performing TABU search. These steps are repeated until the TABU search cannot discover a graph with a higher BIC score. The product is a graph that enables full propagation of evidence by design.
