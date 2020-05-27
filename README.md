@@ -1,4 +1,4 @@
-# Sales_Repository
+# Sales_Prediction
 
 ## Introduction 
 Sales forecasting is a crucial part of the financial planning of any retail operation. Forecasting is a selfassessment tool that uses past sales statistics to intelligently predict future performance. This is essential for meeting the demands of consumers whilst controlling pricing and optimizing the use of inventory space, as holding excess inventory adds to overhead costs for a business.
